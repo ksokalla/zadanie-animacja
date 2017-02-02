@@ -1,0 +1,35 @@
+.counter {
+    width:500px;
+    height:500px;
+    background:#123456;
+	border: 1px solid #000;
+    overflow:hidden;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	
+}
+.numbers{
+    width:auto;
+	animation: odliczanie 11s;
+    animation-fill-mode:forwards;
+    animation-timing-function: steps(11);
+}
+.numbers div {
+    float:left;
+    text-align:center;
+    width:500px;
+    height:500px;
+    line-height:500px;
+    display:inline-block;
+}
+
+@keyframes odliczanie {
+	0% {
+		margin-left: 0px;
+	}
+	
+	100% {
+		margin-left: -5500px;
+	}
+}
